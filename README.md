@@ -5,6 +5,14 @@
 
 
 ````markdown
+
+
+---
+
+
+````
+
+---
 # AWS CloudFormation Project — EC2 with Security Group & Elastic IP
 
 ## 🚀 Project Overview
@@ -26,9 +34,38 @@ The deployment is done using an **Infrastructure as Code (IaC)** approach with a
 ---
 
 ## 📑 Project Report
-👉 [Click here to view/download the PDF](https://drive.google.com/file/d/1c2G_KaDHGViFNPpEl4q9YfBGeol3ywvu/view?usp=drive_link)
+👉 [Click here to view/download the PDF](https://drive.google.com/file/d/11-NxTFtmoyFbgElxD3agheD0TZVYiV-i/view)
+## 🔧 Deployment Steps
+
+1. Open **AWS Management Console** → CloudFormation.
+2. Create a new stack → Upload the `ec2-sg-eip.yml` file.
+3. Provide parameters:
+
+   * SecurityGroupDescription
+   * Existing KeyPair name
+   * Subnet ID(s)
+   * Instance type (default: t2.micro)
+4. Launch stack and wait for `CREATE_COMPLETE`.
+5. Get the **Outputs**:
+
+   * Instance ID
+   * Elastic IP
+   * Public DNS
+   * Availability Zone
 
 ---
+
+## 📊 Real-Time Use Case
+
+* Automates EC2 provisioning with secure access rules.
+* Assigns static IP for easier application access.
+* Demonstrates IaC approach → repeatable and scalable infrastructure setup.
+
+---
+
+## ✅ Conclusion
+
+This project shows how to provision a secure, reproducible EC2 environment with CloudFormation using **YAML templates**, making deployments faster and consistent.
 
 ## 📜 CloudFormation Template (ec2-sg-eip.yml)
 
@@ -118,42 +155,6 @@ Outputs:
   PublicIP:
     Description: Public IP address of the newly created EC2 instance
     Value: !GetAtt MyInstance.PublicIp
-````
-
----
-
-## 🔧 Deployment Steps
-
-1. Open **AWS Management Console** → CloudFormation.
-2. Create a new stack → Upload the `ec2-sg-eip.yml` file.
-3. Provide parameters:
-
-   * SecurityGroupDescription
-   * Existing KeyPair name
-   * Subnet ID(s)
-   * Instance type (default: t2.micro)
-4. Launch stack and wait for `CREATE_COMPLETE`.
-5. Get the **Outputs**:
-
-   * Instance ID
-   * Elastic IP
-   * Public DNS
-   * Availability Zone
-
----
-
-## 📊 Real-Time Use Case
-
-* Automates EC2 provisioning with secure access rules.
-* Assigns static IP for easier application access.
-* Demonstrates IaC approach → repeatable and scalable infrastructure setup.
-
----
-
-## ✅ Conclusion
-
-This project shows how to provision a secure, reproducible EC2 environment with CloudFormation using **YAML templates**, making deployments faster and consistent.
-
 ```
 
 
