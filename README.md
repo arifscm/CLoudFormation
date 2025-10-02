@@ -1,8 +1,8 @@
 
 
+---
 
 
-## ✅ Final `README.md` (for EC2 + SG + EIP CloudFormation Project)
 
 ````markdown
 # AWS CloudFormation Project — EC2 with Security Group & Elastic IP
@@ -26,7 +26,7 @@ The deployment is done using an **Infrastructure as Code (IaC)** approach with a
 ---
 
 ## 📑 Project Report
-👉 [Click here to view/download the PDF][(https://drive.google.com/your-public-share-link)](https://drive.google.com/drive/folders/1eSM1mZlucByT9-jsJurungfoR64uNT8n)
+👉 [Click here to view/download the PDF](https://drive.google.com/file/d/1c2G_KaDHGViFNPpEl4q9YfBGeol3ywvu/view?usp=drive_link)
 
 ---
 
@@ -154,4 +154,7 @@ Outputs:
 
 This project shows how to provision a secure, reproducible EC2 environment with CloudFormation using **YAML templates**, making deployments faster and consistent.
 
+```
 
+
+```
