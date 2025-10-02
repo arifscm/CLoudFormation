@@ -26,7 +26,7 @@ The deployment is done using an **Infrastructure as Code (IaC)** approach with a
 ---
 
 ## 📑 Project Report
-👉 [Click here to view/download the PDF](https://drive.google.com/your-public-share-link)
+👉 [Click here to view/download the PDF][(https://drive.google.com/your-public-share-link)](https://drive.google.com/drive/folders/1eSM1mZlucByT9-jsJurungfoR64uNT8n)
 
 ---
 
